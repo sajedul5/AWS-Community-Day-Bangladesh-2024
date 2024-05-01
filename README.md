@@ -1,1 +1,1 @@
-# AWS-Community-Day-Bangladesh-2024
+# Workshop EC2, ECS and EKS
