@@ -1,0 +1,15 @@
+Step 1: Configure kubectl with Your EKS Cluster
+=> aws eks --region ap-south-1 update-kubeconfig --name my-test
+Step 2: Deploy NGINX on EKS
+Create a Deployment for NGINXCreate a YAML file named deployment.yaml:
+=> kubectl apply -f nginx-deployment.yaml
+Check the DeploymentTo see if the NGINX pods are running, use:
+=> kubectl get pods
+Step 3: Expose NGINX Publicly Using a Service
+
+Create a ServiceCreate another YAML file named service.yaml:
+=> kubectl apply -f nginx-service.yaml
+Check the ServiceIt takes a few minutes for the AWS Load Balancer to be set up. Check the status of your service and retrieve the public IP address:
+=> kubectl get svc
+Step 4: Access NGINX
+http://<EXTERNAL-IP>. 
