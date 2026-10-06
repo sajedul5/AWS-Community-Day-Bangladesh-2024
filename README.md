@@ -67,3 +67,7 @@ Check the ServiceIt takes a few minutes for the AWS Load Balancer to be set up. 
 => kubectl get svc
 # Step 8: Access NGINX
 http://<EXTERNAL-IP>
+
+## License
+
+MIT. See [LICENSE](LICENSE).
